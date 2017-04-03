@@ -42,17 +42,19 @@
           {% if page.version %}<span class="version">{{page.version}}</span>{% endif %}
         </h1>
       </div>
+    </div>
 
+    <div id="configure" class="unconfigured">
       <div class="container">
-        <div id="code-of-conduct">
-          {{ content }}
-        </div>
       </div>
+    </div>
 
-      <script type="text/javascript" src="js/configure.js"></script>
-
+    <div class="container">
+      <div id="code-of-conduct">
+        {{ content }}
+      </div>
     </div>
   </article>
-
+  <script type="text/javascript" src="js/configure.js"></script>
 </body>
 </html>
