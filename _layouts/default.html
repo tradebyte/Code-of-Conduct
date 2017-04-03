@@ -15,27 +15,25 @@
 
   <meta property='og:type' content='website' />
   <meta property='og:title' content='{{page.title}}' />
-  <meta property='og:image' content='{{site.parenturl}}static/og.png' />
 
-  <link rel="shortcut icon" href="{{site.parenturl}}static/favicon.png" />
+  <!--<meta property='og:image' content='{{site.parenturl}}static/og.png' />-->
+  <!--<link rel="shortcut icon" href="{{site.parenturl}}static/favicon.png" />-->
 
   <link rel="stylesheet" href="//unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
 
 </head>
 <body>
-  <article id='article' class='page-{{page.title|downcase}}'>
-    <div class="container">
-      <div class="page-header">
-        <h1>
-          <a href="{{ site.url }}">{{ site.title }}</a>
-          {% if page.version %}<span class="version">{{page.version}}</span>{% endif %}
-        </h1>
+
+  <div class="header">
+    <h1>
+      <a href="{{ site.url }}">{{ site.title }}</a>
+      {% if page.version %}<span class="version">{{page.version}}</span>{% endif %}
+    </h1>
+  </div>
+  <div class="content-wrapper">
+      <div class="content">
+        {{ content }}
       </div>
-
-      {{ content }}
-
-    </div>
-  </article>
-
+  </div>
 </body>
 </html>
