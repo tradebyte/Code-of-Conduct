@@ -92,4 +92,3 @@ class Template
     @element = node
 
 template = new Template(element) if element = document.querySelector("#code-of-conduct")
-new Configure(template, element) if element = document.getElementById("configure")
