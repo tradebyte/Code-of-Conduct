@@ -1,5 +1,5 @@
 ---
-layout: code-of-conduct
+layout: index
 version: v1.0
 ---
 
